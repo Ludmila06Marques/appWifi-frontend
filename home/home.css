@@ -1,0 +1,241 @@
+#showOnClick{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+.logo-image img{ 
+    width: 200px;
+    height: auto;
+    margin-top: 70px;
+}
+.navBarr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    width: 100%;
+    height: 50px;
+
+}
+.botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carteira{
+    display: flex;
+    padding: 10px;
+    padding-right: 20px;
+    align-items: center;
+}
+.carteira ion-icon{
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+.carteira h1{
+    font-size: 15px;
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+}
+.usuario{
+    padding: 10px;
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+}
+.usuario ion-icon{
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+.usuario h1{
+    font-size: 15px;
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+}
+.progresso-dinheiro{
+    width: 300px;
+    height: 50px;
+}
+.dinheiro{
+    display: flex;
+    justify-content: space-between;
+
+}
+.dinheiro h1{
+    color: white;
+}
+.barra{
+  
+    width: 300px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: #CCCCCC;
+}
+
+.barra div{
+  
+    height: 100%;
+    border-radius: 10px;
+    background-color: #5EEB80;
+}
+
+.sacar button{
+    text-decoration: none;
+    background-color:#CCCCCC;
+    border: none;
+    width: 250px;
+    height: 42px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+}
+.sacar button:active{
+    transform: scale(0.98);
+}
+
+/*First button*/
+.slider{
+    -webkit-appearance: none;
+    height: 42px;
+    background:rgb(214,214,214); 
+    outline: none;
+    opacity: 0.7;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px 1px black;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+   
+}
+.slider::-webkit-slider-thumb{
+   
+    -webkit-appearance:none;
+    appearance: none;
+    width: 60px;
+    height: 42px;
+    background: #5EEB80;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+  
+    box-shadow: -407px 0 0 400px #5EEB80;
+  
+  
+}
+.slider::-moz-range-thumb{
+    width: 60px;
+    height: 42px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.arrastar {
+    margin-top: 150px;
+    position: relative;
+  /*   display: flex;*/
+   display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.arrastar input{ 
+    border: none;
+    width: 250px;
+    
+}
+#icon{
+    position: absolute;
+    bottom:35%;
+    left:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+#icon ion-icon{
+    color: white;
+}
+.text{
+    position: absolute;
+    bottom:25%;
+    left:42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text h1{
+    color: white;
+    
+}
+
+ /*  Second button*/
+ .switch{
+    display: flex;
+    /*display: none;*/
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #CCCCCC;
+    width:250px ;
+    height: 42px;
+    border-radius: 8px;
+}
+#switch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.switch input{
+    display: none;
+}
+.switch .rail{
+    position: relative;
+    width: 200px;
+    height: 30px;
+    background-color: #5EEB80;
+    border-radius: 10px;
+}
+.switch .rail .circle{
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    transition: tranform 0.4s;
+}
+.switch .indicator{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 15px;
+    transition:  0.4s;
+}
+.switch .input:checked~ .rail .circle{
+    transform: transLate(170px, -50%);
+}
+.switch .input:checked~ .indicator{
+    background-color: #5EEB80;
+}
+.textoAtivar  h1{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
