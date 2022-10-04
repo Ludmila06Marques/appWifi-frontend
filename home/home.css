@@ -7,7 +7,7 @@
 .logo-image img{ 
     width: 200px;
     height: auto;
-    margin-top: 70px;
+  
 }
 .navBarr{
     display: flex;
@@ -239,3 +239,64 @@
     font-weight: bold;
     margin-bottom: 10px;
 }
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+
+  .modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  
+  .modal > div {
+    border-radius: 8px;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px; 
+    margin-left: -125px; 
+    padding: 15px;
+    background: #fff;
+  }
+
+  .fechar {
+    position: absolute;
+    width: 30px;
+    right: 0;
+    top: 0px;
+    text-align: center;
+    line-height: 30px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: wheat;
+
+   
+  }
+  a{
+    text-decoration:none ;
+ }
+ .modal-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .modal-text  h1{
+   text-align: center;
+ }
