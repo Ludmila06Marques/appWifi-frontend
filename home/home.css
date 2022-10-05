@@ -94,6 +94,7 @@
     border-radius: 10px;
     margin-bottom: 10px;
     box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    
     cursor: pointer;
     outline: none;
     transition: 0.2s all;
@@ -138,6 +139,8 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+
 .arrastar {
     margin-top: 150px;
     position: relative;
@@ -146,6 +149,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+  
 }
 .arrastar input{ 
     border: none;
@@ -180,8 +185,8 @@
 
  /*  Second button*/
  .switch{
-    display: flex;
-    /*display: none;*/
+    display: none;
+    /*display: flex;*/
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -300,3 +305,73 @@
  .modal-text  h1{
    text-align: center;
  }
+ /*Botao deslizante*/
+.deslizante{
+    position: relative;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ body {
+	--l1: hsl(228,9.8%,100%);
+	--l2: hsl(134, 30%, 100%);
+	--l3: hsl(228,9.8%,63%);
+	--p:  hsl(1.2,90.4%,44.9%); 
+	--pT: hsl(120,90.4%,44.9%,0);
+
+	height: 100vh;
+}
+form, input[type=range] {
+	margin:auto;
+    
+}
+form {
+    
+	border-radius: 8px;
+   
+ 
+}
+#icon-deslizar{
+    position: absolute;
+    top: 35px;
+    right: -25px;
+    color: white;
+
+}
+input[type=range] {
+	cursor: pointer;
+	height: 38px;
+	width: 250px;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+    background-color: var(--l2);
+	border-radius: 0.75em;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+}
+
+input[type=range]::-webkit-slider-thumb {
+	border:0;
+	background: linear-gradient(var(--p),
+				var(--p)) 70% 50%/20% 5% no-repeat,
+				linear-gradient(var(--l2),
+				var(--l2)) 70% 50%/20% 15% no-repeat,
+				radial-gradient(100% 100% at 50% 50%,
+				var(--pT) 14%, var(--p) 15% 19%,
+				var(--pT) 20%),
+				var(--l2);
+    font-size: 25px;
+	border-radius: 50%;
+	width: 1.5em;
+	height: 1.5em;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+input[type=range]:focus {
+	outline: transparent;
+  
+   
+} 
